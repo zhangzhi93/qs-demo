@@ -1,0 +1,34 @@
+{
+  "name": "qs-demo",
+  "version": "1.0.0",
+  "description": "A project about qs",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangzhi93/qs-demo.git"
+  },
+  "keywords": [
+    "qs"
+  ],
+  "author": "janz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangzhi93/qs-demo/issues"
+  },
+  "homepage": "https://github.com/zhangzhi93/qs-demo#readme",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "qs": "^6.5.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2"
+  }
+}
