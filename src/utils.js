@@ -8,6 +8,9 @@ export function getElementById(id) {
 //  {"name":"janz","age":23,"sex":"male"}
 
 export function createElements(str, dom) {
-  str = '<button id="btn" class="middle-size">转换</button>';
+  //str = '<button id="btn" class="middle-size">转换</button>';
+  const htmlPattern = /(?<=<)\w+(?=\s)/;
+  let arr = str.match(htmlPattern);
+  let attr = str.match(/(\w+)\s*=\s*(".*?")/g);
 
 }

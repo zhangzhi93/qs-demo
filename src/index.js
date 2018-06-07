@@ -1,6 +1,7 @@
 import Qs from 'qs';
 import {
-  getElementById
+  getElementById,
+  createElements
 } from './utils';
 
 let textarea = document.createElement('textarea');
@@ -20,6 +21,9 @@ getElementById('btn_transform').onclick = function() {
   let textJson = JSON.parse(textValue || '{}');
   getElementById('after_value').innerHTML = Qs.stringify(textJson);
 }
+
+createElements('<div id="after_value">document</div>');
+
 
 const obj = {
   name: 'janz',
