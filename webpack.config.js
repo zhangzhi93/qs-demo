@@ -17,6 +17,17 @@
         exclude: /node_modules/,
         include: path.resolve(__dirname, 'src'),
         use: "babel-loader"
+      }, {
+        test: /\.less$/,
+        use: [
+          'style-loader', {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'less-loader'
+        ]
       }]
     }
   }
