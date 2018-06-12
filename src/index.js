@@ -6,15 +6,34 @@ import {
 import './style.less';
 
 let container = createElements('<div class="container"></div>');
-let textarea = createElements('<textarea id="before_value" class="textarea" placeholder="请输入标准的json"></textarea>', container);
+createElements('<h2>Qs 转换:</h2>', container);
+let textarea = createElements('<textarea class="textarea" placeholder="请输入符合标准的json"></textarea>', container);
 let btnDiv = createElements('<div class="div-btn"></div>', container);
-let button = createElements('<button id="btn_transform">转换</button>', btnDiv);
-let showDiv = createElements('<div id="after_value" class="div-show"></div>', container);
+let button = createElements('<button>转换</button>', btnDiv);
+let showDiv = createElements('<div class="div-show"></div>', container);
 
-getElementById('btn_transform').onclick = function() {
-  let textValue = getElementById('before_value').value;
+
+let URLcontainer = createElements('<div class="container"></div>');
+createElements('<h2>URLSearchParams 转换:</h2>', URLcontainer);
+let URLtextarea = createElements('<textarea class="textarea" placeholder="请输入符合标准的json"></textarea>', URLcontainer);
+let URLbtnDiv = createElements('<div class="div-btn"></div>', URLcontainer);
+let URLbutton = createElements('<button>转换</button>', URLbtnDiv);
+let URLshowDiv = createElements('<div class="div-show"></div>', URLcontainer);
+
+button.onclick = function() {
+  let textValue = textarea.value;
   let textJson = JSON.parse(textValue || '{}');
-  getElementById('after_value').innerHTML = Qs.stringify(textJson);
+  showDiv.innerHTML = Qs.stringify(textJson);
+}
+
+URLbutton.onclick = function() {
+  let URLtextValue = URLtextarea.value;
+  let URLtextJson = JSON.parse(URLtextValue || '{}');
+  let params = new URLSearchParams();
+  for (let key in URLtextJson) {
+    params.append(key, URLtextJson[key]);
+  }
+  URLshowDiv.innerHTML = params;
 }
 
 createElements('<div class="bottom">janz</div>');
