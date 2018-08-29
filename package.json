@@ -25,13 +25,13 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^8.0.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
-    "css-loader": "^0.28.11",
+    "css-loader": "^1.0.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
-    "style-loader": "^0.21.0",
+    "style-loader": "^0.23.0",
     "webpack": "^4.11.1",
     "webpack-cli": "^3.0.2"
   }
