@@ -21,18 +21,18 @@
   "homepage": "https://github.com/zhangzhi93/qs-demo#readme",
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "qs": "^6.6.0"
+    "qs": "^6.9.4"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
-    "css-loader": "^2.1.0",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3"
+    "css-loader": "^4.3.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   }
 }
